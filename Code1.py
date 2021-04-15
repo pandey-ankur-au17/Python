@@ -1,0 +1,5 @@
+name=input("What is your Name:")
+age=int(input("What is your age:"))
+tel_no=int(input("What is your telephon number:"))
+print("Welcome",name)
+print("You are ",age," years old and your mobile number is ",tel_no)
