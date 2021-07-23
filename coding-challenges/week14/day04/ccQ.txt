@@ -1,0 +1,46 @@
+. Write short note on CPU scheduling algorithms
+
+A Process Scheduler schedules different processes to be assigned to the CPU based on particular scheduling algorithms. There are six popular process scheduling algorithms which we are going to discuss in this chapter −
+
+First-Come, First-Served (FCFS) Scheduling
+Shortest-Job-Next (SJN) Scheduling
+Priority Scheduling
+Shortest Remaining Time
+Round Robin(RR) Scheduling
+Multiple-Level Queues Scheduling
+These algorithms are either non-preemptive or preemptive. Non-preemptive algorithms are designed so that once a process enters the running state, it cannot be preempted until it completes its allotted time, whereas the preemptive scheduling is based on priority where a scheduler may preempt a low priority running process anytime when a high priority process enters into a ready state.
+
+First Come First Serve (FCFS)
+Jobs are executed on first come, first serve basis.
+It is a non-preemptive, pre-emptive scheduling algorithm.
+Easy to understand and implement.
+Its implementation is based on FIFO queue.
+Poor in performance as average wait time is high.
+
+
+
+
+What is preemptive vs non preemptive scheduling algos
+
+
+1. Preemptive Scheduling: 
+Preemptive scheduling is used when a process switches from running state to ready state or from waiting state to ready state. The resources (mainly CPU cycles) are allocated to the process for the limited amount of time and then is taken away, and the process is again placed back in the ready queue if that process still has CPU burst time remaining. That process stays in ready queue till it gets next chance to execute. 
+
+Algorithms based on preemptive scheduling are: Round Robin (RR),Shortest Remaining Time First (SRTF), Priority (preemptive version), etc. 
+
+
+
+2. Non-Preemptive Scheduling: 
+Non-preemptive Scheduling is used when a process terminates, or a process switches from running to waiting state. In this scheduling, once the resources (CPU cycles) is allocated to a process, the process holds the CPU till it gets terminated or it reaches a waiting state. In case of non-preemptive scheduling does not interrupt a process running CPU in middle of the execution. Instead, it waits till the process complete its CPU burst time and then it can allocate the CPU to another process. 
+
+Algorithms based on non-preemptive scheduling are: Shortest Job First (SJF basically non preemptive) and Priority (non preemptive version), etc.
+
+
+
+
+
+
+
+
+
+
